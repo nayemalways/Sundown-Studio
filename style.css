@@ -251,16 +251,19 @@ video {
     position: absolute;
     top: 60%;
     left: 20%;
+    z-index: -1;
     filter: blur(25px);
-    animation: gooeyanim 5s linear  infinite alternate;
+    animation: gooeyanim 6s ease-in-out  infinite alternate;
 }
 
 @keyframes gooeyanim {
     from {
-        transform: translate(10%, -10%);
+        filter: blur(20px);
+        transform: translate(10%, -15%) skew(0deg);
     }
     to {
-        transform: translate(-10%, 10%);
+        filter: blur(30px);
+        transform: translate(-10%, 10%) skew(-12deg);
     }
 }
 

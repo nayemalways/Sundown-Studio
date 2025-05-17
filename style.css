@@ -323,4 +323,7 @@ video {
     top: 25%;
     z-index: 99;
     display: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
